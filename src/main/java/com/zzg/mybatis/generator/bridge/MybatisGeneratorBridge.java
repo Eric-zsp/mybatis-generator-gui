@@ -122,6 +122,7 @@ public class MybatisGeneratorBridge {
         commentConfig.setConfigurationType(DbRemarksCommentGenerator.class.getName());
         if (generatorConfig.isComment()) {
             commentConfig.addProperty("columnRemarks", "true");
+            commentConfig.addProperty("javaFileEncoding", "UTF-8");
         }
         if (generatorConfig.isAnnotation()) {
             commentConfig.addProperty("annotations", "true");
